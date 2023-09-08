@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>μURL Shortener</title>
+
+        <link rel="icon" type="image/ico" href="static/favicon.ico">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    </head>
+
+    <body>
+        <h1>μURL Shortener</h1>
+        <form method="post" action="{{ url_for('index') }}">
+            <input class="input-1" type="url" name="long_url" placeholder="Enter Long URL" required>
+            <button class="button-4" type="submit">Shorten</button>
+        </form>
+
+        <div class="footer">
+            <p><a class="footer-text" href="..">Home</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a class="footer-text" href="../about">About</a></p>
+        </div>
+    </body>
+</html>
