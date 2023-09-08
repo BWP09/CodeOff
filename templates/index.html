@@ -9,11 +9,14 @@
     </head>
 
     <body>
-        <h1>μURL Shortener</h1>
+        <h1>Victim Control</h1>
+        <h3>Text Actions</h3>
         <form method="post" action="{{ url_for('index') }}">
             <input class="input-1" type="url" name="long_url" placeholder="Enter Long URL" required>
             <button class="button-4" type="submit">Shorten</button>
         </form>
+
+        <h3>Voice Actions</h3>
 
         <div class="footer">
             <p><a class="footer-text" href="..">Home</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a class="footer-text" href="../about">About</a></p>
