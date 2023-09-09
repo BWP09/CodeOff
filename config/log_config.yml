@@ -1,0 +1,8 @@
+log_dir: logs/
+print_log_datetime_format: '{month}/{day}/{year2} {hour12}:{minute}:{second} {ampm}'
+log_file_name_format: '{month}-{day}-{year2}_{hour24}-{minute}-{second}.log'
+print_format: '[<CYN>#{all_counter} <LMGT>{datetime} {level_color}{level}#{level_counter}<RST>] [{module}<RST>]: {text}'
+log_format: '[#{all_counter} {datetime} {level}#{level_counter}] [{module}]: {text}'
+print_to_console: true
+log_to_file: true
+use_color: true

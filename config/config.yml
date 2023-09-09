@@ -1,0 +1,20 @@
+bot:
+  version: '3.0'
+  status_type: dnd
+  status_playing: Have fun :)!
+paths:
+  secrets_config: config/secrets.yml
+  logs_config: config/log_config.yml
+harassment:
+  target_guild_id: 1150153532020883568
+  target_user_id: 748558292162314292
+  event_timer: 30
+  random_messages: true
+  timeout_time_lower: 10
+  timeout_time_upper: 20
+  mute_time_lower: 10
+  mute_time_upper: 15
+  deafen_time_lower: 5
+  deafen_time_upper: 10
+  lockout_time_lower: 5
+  lockout_time_upper: 15
