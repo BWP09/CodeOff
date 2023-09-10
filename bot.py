@@ -193,16 +193,20 @@ async def random_messages():
             case 8: text = f"😭"; attach = "images/keeganid.png"
             case 9: text = "goober"; attach = "images/goober.png"
 
-        if attach:
-            message = await channel.send(text, file = nc.File(attach))
+        try:
+            if attach:
+                message = await channel.send(text, file = nc.File(attach))
 
-            if attach == "images/goober.png":
-                await asyncio.sleep(2)
-                await message.delete()
-                await channel.send("sorry... :/")
+                if attach == "images/goober.png":
+                    await asyncio.sleep(2)
+                    await message.delete()
+                    await channel.send("sorry... :/")
 
-        else:
-            await channel.send(text)
+            else:
+                await channel.send(text)
+        
+        except:
+            pass
 
 random_messages.start()
 bot.run(config.token)
